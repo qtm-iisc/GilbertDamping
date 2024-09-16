@@ -1,0 +1,10 @@
+&inputpp 
+   outdir = './'
+   prefix = 'Co'
+   seedname = 'Co'
+   write_mmn = .true.
+   write_amn = .true.
+   write_spn = .true.
+   write_uHu = .false.
+   write_unk = .false.
+/

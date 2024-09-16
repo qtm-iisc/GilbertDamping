@@ -1,0 +1,10 @@
+&inputpp 
+   outdir = './'
+   prefix = 'Ni'
+   seedname = 'Ni'
+   write_mmn = .true.
+   write_amn = .true.
+   write_spn = .true.
+   write_uHu = .false.
+   write_unk = .false.
+/

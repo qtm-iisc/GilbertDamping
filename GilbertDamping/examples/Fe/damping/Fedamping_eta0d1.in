@@ -1,0 +1,6 @@
+seedname: Fe            ### same as Wannier seedname
+temperature: 300        ### Temerature used in Fermi function
+eta: 0.1                ### Broadening used in Green's function
+grid: 100               ### k-grid for interpolation (same in all directions)
+magnetisation: 2.3812   ### specify from scf output (in Bohr Magnetons)
+fermienergy: 17.6254    ### in eV

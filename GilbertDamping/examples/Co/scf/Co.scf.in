@@ -1,0 +1,27 @@
+ &control
+    calculation='scf'
+    pseudo_dir = '.',
+    outdir='.'
+    prefix='Co'
+    verbosity = 'high'
+ /
+ &system
+    ibrav = 4, celldm(1) = 4.7377, celldm(3)=1.6232, nat= 2, ntyp= 1,
+    ecutwfc = 90.0,
+    lspinorb=.true.,
+    noncolin=.true., 
+    starting_magnetization(1) = 0.7
+    occupations='smearing', smearing='cold', degauss=0.02
+ /
+ &electrons
+    diagonalization='david'
+    conv_thr=1.0e-10
+ /
+ATOMIC_SPECIES
+ Co 58.933 Co_ONCV_PBE_FR-1.0.upf
+ATOMIC_POSITIONS crystal
+ Co 0.3333333333 0.6666666667 0.25
+ Co 0.6666666667 0.3333333333 0.75
+K_POINTS (automatic)
+16 16 16 0 0 0
+

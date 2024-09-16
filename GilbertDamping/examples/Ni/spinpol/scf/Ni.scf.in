@@ -1,0 +1,25 @@
+ &control
+    calculation='scf'
+    pseudo_dir = '.',
+    outdir='.'
+    prefix='Ni'
+    verbosity = 'high'
+ /
+ &system
+    ibrav = 2, celldm(1) =6.6698, nat= 1, ntyp= 1,
+    ecutwfc = 80.0,
+    nspin =2,
+    starting_magnetization(1) = -1
+    occupations='smearing', smearing='cold', degauss=0.02
+ /
+ &electrons
+    diagonalization='david'
+    conv_thr=1.0e-10
+ /
+ATOMIC_SPECIES
+ Ni  58.6934  Ni_ONCV_PBE_FR-1.0.upf
+ATOMIC_POSITIONS
+ Ni  0.0 0.0 0.0
+K_POINTS (automatic)
+16 16 16 0 0 0
+
